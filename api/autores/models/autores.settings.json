@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "autores",
+  "info": {
+    "name": "Autores"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "correo": {
+      "type": "email"
+    },
+    "tituloautor": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "temas",
+  "info": {
+    "name": "Temas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "contenido": {
+      "type": "richtext"
+    },
+    "imagen": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "titutlo": {
+      "type": "string"
+    },
+    "categoria": {
+      "model": "categorias"
+    },
+    "autor": {
+      "model": "autores"
+    }
+  }
+}
